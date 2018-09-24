@@ -1,0 +1,6 @@
+framework module Pods_LocalStoresiOSTests {
+  umbrella header "Pods-LocalStoresiOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

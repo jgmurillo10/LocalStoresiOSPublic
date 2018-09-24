@@ -1,0 +1,8 @@
+stages:
+  - build
+
+build_project:
+  stage: build
+  script:
+    - xcodebuild clean -workspace LocalStoresiOS.xcworkspace -scheme LocalStoresiOS | xcpretty
+    - xcodebuild test -workspace LocalStoresiOS.xcworkspace -scheme LocalStoresiOS -destination 'platform=iOS Simulator,name=iPhone 8 Plus,OS=11.0' | xcpretty -s

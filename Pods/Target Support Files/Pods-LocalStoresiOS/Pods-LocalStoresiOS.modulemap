@@ -1,0 +1,6 @@
+framework module Pods_LocalStoresiOS {
+  umbrella header "Pods-LocalStoresiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
